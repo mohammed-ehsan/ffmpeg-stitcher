@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ffmpeg_stitcher"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        WindowStyle="ToolWindow"
+        SizeToContent="Height"
+        Title="ffmpeg Stitcher" Height="350" Width="525">
     <Grid>
-        
+        <StackPanel>
+            <Button Content="Select Images Source" Click="SelectFolder_Click" Width="200" Height="35" Margin="10" Background="DarkSlateBlue" Foreground="White"/>
+            <TextBlock x:Name="txtblk_imagesPath" HorizontalAlignment="Center" Height="30" FontSize="16"/>
+            <Label Margin="10,0,10,0" FontSize="14">Naming Convention:</Label>
+            <TextBox x:Name="txtbx_nameingConv" Height="25" Margin="10,2,10,2"/>
+            <Button Content="Render Video" Click="RenderVideo_Click" Height="30" Margin="10,2,10,2" Background="DarkSlateBlue" Foreground="White"/>
+            <TextBlock Text="Design By:" FontSize="26" HorizontalAlignment="Center" Margin="10" Foreground="Green" FontWeight="Heavy"/>
+            <TextBlock HorizontalAlignment="Center" FontSize="20" Foreground="OrangeRed" FontWeight="Heavy" Margin="10">Eng. Mohammed Ehsan</TextBlock>
+            <TextBlock  HorizontalAlignment="Center" FontSize="20" Foreground="OrangeRed" FontWeight="Heavy" Margin="0,0,0,20">Email: Developer1Engineer@gmail.com</TextBlock>
+        </StackPanel>
     </Grid>
 </Window>
